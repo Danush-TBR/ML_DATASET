@@ -1,10 +1,6 @@
-1.	Load Data set
-2.	Initialize General Hypothesis and Specific Hypothesis.
-3.	For each training example  
-4.	If example is positive example  
-          if attribute_value == hypothesis_value:
-             Do nothing  
-          else:
-             replace attribute value with '?' (Basically generalizing it)
-5.	If example is Negative example  
-          Make generalize hypothesis more specific.
+1.	Start with the most specific hypothesis. 
+h = {ϕ, ϕ, ϕ, ϕ, ϕ, ϕ}
+2.	Take the next example and if it is negative, then no changes occur to the hypothesis.
+3.	If the example is positive and we find that our initial hypothesis is too specific then we update our current hypothesis to a general condition.
+4.	Keep repeating the above steps till all the training examples are complete.
+5.	After we have completed all the training examples, we will have the final hypothesis when can use to classify the new examples.
