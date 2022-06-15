@@ -31,3 +31,12 @@ for i in range(1,len(a)):
     print(" For Training instance No:{0} the hypothesis is".format(i),hypothesis)
 print("\n The Maximally Specific Hypothesis for a given Training Examples :\n")
 print(hypothesis)
+
+'''
+'Sunny', 'Warm', 'Normal', 'Strong', 'Warm', 'Same',True
+'Sunny', 'Warm', 'High', 'Strong', 'Warm','Same',True
+'Rainy', 'Cold', 'High', 'Strong', 'Warm','Change',False
+'Sunny', 'Warm', 'High', 'Strong', 'Cool','Change',True
+Maximally Specific set
+[['Sunny', 'Warm', '?', 'Strong', '?', '?']]
+'''
